@@ -1,0 +1,7 @@
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\obj\Debug\CSV_Tabellierer_Test.csprojResolveAssemblyReference.cache
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\bin\Debug\CSV_Tabellierer_Test.dll
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\bin\Debug\CSV_Tabellierer_Test.pdb
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\bin\Debug\CSV_Tabellierer.exe
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\bin\Debug\CSV_Tabellierer.pdb
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\obj\Debug\CSV_Tabellierer_Test.dll
+c:\users\rtetmeyer\documents\visual studio 2010\Projects\CSV_Tabellierer\CSV_Tabellierer_Test\obj\Debug\CSV_Tabellierer_Test.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV_Tabellierer", "CSV_Tabellierer\CSV_Tabellierer.csproj", "{94B17D34-6F6C-4B07-AA35-28D8DF8499C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV_Tabellierer_Test", "CSV_Tabellierer_Test\CSV_Tabellierer_Test.csproj", "{C51E5AE5-6621-4837-8B90-6CC85808B270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94B17D34-6F6C-4B07-AA35-28D8DF8499C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B17D34-6F6C-4B07-AA35-28D8DF8499C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B17D34-6F6C-4B07-AA35-28D8DF8499C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B17D34-6F6C-4B07-AA35-28D8DF8499C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51E5AE5-6621-4837-8B90-6CC85808B270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51E5AE5-6621-4837-8B90-6CC85808B270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51E5AE5-6621-4837-8B90-6CC85808B270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51E5AE5-6621-4837-8B90-6CC85808B270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
