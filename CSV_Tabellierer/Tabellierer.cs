@@ -9,21 +9,18 @@ namespace CSV_Tabellierer
         {
             var csvLineList = CSV_zeilen.ToList();
             
-            //analysieren
-            var columnCount = GetColumnCount(csvLineList);
-            var rowCount = GetRowCount(csvLineList);
-            var splitedContent = Split_CSV_Content(csvLineList, rowCount, columnCount);
-            var columnWidth = CalculateColumnWidth(splitedContent, rowCount, columnCount);
-            
-            //formatieren
+            var splitedContent = Split_CSV_Content(csvLineList);
+            var columnWidth = CalculateColumnWidth(splitedContent);
             var horizontalRule = GeneratehorizontalRule(columnWidth);
-            var formattedOutput = FormatContent(splitedContent, rowCount, columnCount, columnWidth, horizontalRule);
+            var formattedOutput = FormatContent(splitedContent, columnWidth, horizontalRule);
             
             return formattedOutput;
         }
 
-        private IEnumerable<string> FormatContent(string[,] splitedContent, int rowCount, int columnCount, int[] columnWidth, string horizontalRule)
+        private IEnumerable<string> FormatContent(string[,] splitedContent, int[] columnWidth, string horizontalRule)
         {
+            var rowCount = splitedContent.GetLength(0);
+            var columnCount = splitedContent.GetLength(1);
             var retVal = new List<string>();
             for (int r = 0; r < rowCount; r++)
             {
@@ -53,20 +50,11 @@ namespace CSV_Tabellierer
             return hr;
         }
 
-        private int GetRowCount(List<string> csvZeilen)
+        private string[,] Split_CSV_Content(List<string> csvZeilen)
         {
-            return csvZeilen.Count;
-        }
-
-        private int GetColumnCount(List<string> csvZeilen)
-        {
-            return csvZeilen[0].Split(';').Length;
-        }
-
-        private string[,] Split_CSV_Content(List<string> csvZeilen, int rowCount, int columnCount)
-        {
-            var retVal = new string[rowCount, columnCount];
-            for (int r = 0; r < rowCount; r++)
+            var columnCount = csvZeilen[0].Split(';').Length;
+            var retVal = new string[csvZeilen.Count, columnCount];
+            for (int r = 0; r < csvZeilen.Count; r++)
             {
                 var split = csvZeilen[r].Split(';');
                 for (int c = 0; c < columnCount; c++)
@@ -77,10 +65,11 @@ namespace CSV_Tabellierer
             return retVal;
         }
 
-        private int[] CalculateColumnWidth(string[,] content, int rowCount, int columnCount)
+        private int[] CalculateColumnWidth(string[,] content)
         {
+            var columnCount = content.GetLength(1);
             var retVal = new int[columnCount];
-            for (int r = 0; r < rowCount; r++)
+            for (int r = 0; r < content.GetLength(0); r++)
             {
                 for (int c = 0; c < columnCount; c++)
                 {
