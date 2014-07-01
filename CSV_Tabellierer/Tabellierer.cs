@@ -7,9 +7,7 @@ namespace CSV_Tabellierer
     {
         public IEnumerable<string> Tabelliere(IEnumerable<string> CSV_zeilen)
         {
-            var csvLineList = CSV_zeilen.ToList();
-            
-            var splitedContent = Split_CSV_Content(csvLineList);
+            var splitedContent = Split_CSV_Content(CSV_zeilen.ToList());
             var columnWidth = CalculateColumnWidth(splitedContent);
             var horizontalRule = GeneratehorizontalRule(columnWidth);
             var formattedOutput = FormatContent(splitedContent, columnWidth, horizontalRule);
